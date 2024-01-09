@@ -29,7 +29,7 @@ for pkg in cmake automake autoconf libtool; do
 done
 
 if [ ! -d libsmb2 ]; then
-    git clone https://github.com/amosavian/libsmb2
+    git clone https://github.com/sahlberg/libsmb2
     cd libsmb2
     echo "Bootstrapping..."
     ./bootstrap &> /dev/null
