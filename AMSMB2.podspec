@@ -8,17 +8,54 @@
 
 Pod::Spec.new do |s|
 
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
   s.name         = "AMSMB2"
   s.version      = "3.3.1"
   s.summary      = "Swift framework to connect SMB2/3 shares"
 
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
   This is small Swift library for iOS which wraps libsmb2 and allows to connect a SMB2/3 share and do file operation.
                    DESC
 
+  s.homepage     = "https://github.com/amosavian/AMSMB2"
+  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+
+
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Licensing your code is important. See http://choosealicense.com for more info.
+  #  CocoaPods will detect a license file if there is a named LICENSE*
+  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+  #
+
   s.license      = { :type => "LGPL-2.1", :file => "LICENSE" }
 
+
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the authors of the library, with email addresses. Email addresses
+  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
+  #  accepts just a name if you'd rather not provide an email address.
+  #
+  #  Specify a social_media_url where others can refer to, for example a twitter
+  #  profile URL.
+  #
+
   s.authors             = { "Amir Abbas Mousavian" => "a.mosavian@gmail.com" }
+  # s.social_media_url   = "https://twitter.com/amosavian"
+  # Or just: s.author    = "Amir Abbas"
+
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
