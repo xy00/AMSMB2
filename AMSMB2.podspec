@@ -94,12 +94,12 @@ Pod::Spec.new do |s|
   s.ios.vendored_libraries = "libsmb2/lib/libsmb2-ios.a"
   s.osx.vendored_libraries = "libsmb2/lib/libsmb2-macos.a"
   s.tvos.vendored_libraries = "libsmb2/lib/libsmb2-tvos.a"
-  s.watchos.vendored_libraries = "libsmb2/lib/libsmb2-watchos.a"
+  # s.watchos.vendored_libraries = "libsmb2/lib/libsmb2-watchos.a"
   s.source_files  = "AMSMB2/**/*.swift"
   s.pod_target_xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(PODS_TARGET_SRCROOT)/libsmb2/lib", 'SWIFT_INCLUDE_PATHS' => "${PODS_TARGET_SRCROOT}/libsmb2/**" }
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(PODS_ROOT)/AMSMB2/libsmb2/lib", 'SWIFT_INCLUDE_PATHS' => "${PODS_ROOT}/AMSMB2/libsmb2/**" }
   #s.exclude_files = "AMSMB2/Exclude"
-  # s.public_header_files = "libsmb2/include/**/*.h"
+  s.public_header_files = "libsmb2/include/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
