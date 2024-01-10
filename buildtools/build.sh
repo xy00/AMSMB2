@@ -31,10 +31,12 @@ done
 if [ ! -d libsmb2 ]; then
     git clone https://github.com/sahlberg/libsmb2
     cd libsmb2
+    git checkout -b clang-support
     echo "Bootstrapping..."
     ./bootstrap &> /dev/null
 else
     cd libsmb2
+    git checkout -b clang-support
 fi
 
 export USECLANG=1
