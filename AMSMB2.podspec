@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(PODS_TARGET_SRCROOT)/libsmb2/lib", 'SWIFT_INCLUDE_PATHS' => "${PODS_TARGET_SRCROOT}/libsmb2/**" }
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "$(PODS_ROOT)/AMSMB2/libsmb2/lib", 'SWIFT_INCLUDE_PATHS' => "${PODS_ROOT}/AMSMB2/libsmb2/**" }
   #s.exclude_files = "AMSMB2/Exclude"
-  s.public_header_files = "libsmb2/include/**/*.h"
+  s.public_header_files = "libsmb2/include/*.h", "libsmb2/include/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
